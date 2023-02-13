@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: purple;
+}
+
+.weather-card {
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+    transition: height 0.2s ease;
+}
+
+.header-text {
+    padding: 10px 0px;
+
+}
+
+.header-section {
+
+    display: flex;
+    align-items: center;
+}
+
+.back-arrow {
+    font-size: 30px;
+    margin: 4px;
+    color: purple;
+    display: none;
+}
+
+.back-arrow-active {
+    display: block;
+}
+
+.header-text p {
+    color: purple;
+    font-size: 24px;
+    padding: 3px 10px;
+}
+
+.bottom-section {
+    width: 100%;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-card hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.input-field {
+    padding: 12px 10px;
+    width: 70%;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 7px;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.separator::before {
+    content: "or";
+    color: #b3b3b3;
+    font-size: 19px;
+    padding: 0 15px;
+    background: #fff;
+}
+
+.current-loc {
+    padding: 15px 60px;
+    font-size: larger;
+    background-color: purple;
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.info-text-sect {
+    display: none;
+}
+
+.info-text {
+    display: block;
+    background-color: rgba(32, 147, 66, 0.5);
+    padding: 1em 5em;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: rgba(32, 147, 66, 0.5);
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.info-text-error {
+    display: block;
+    background-color: rgba(201, 51, 32, 0.5);
+    padding: 1em 5em;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: rgba(201, 51, 32, 0.5);
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.input-field-del {
+    display: none;
+}
+
+.separator-del {
+    display: none;
+
+}
+
+.current-loc-del {
+    display: none;
+}
+
+.weather-card-active {
+    height: 500px;
+}
+
+.weather-details {
+    display: none;
+}
+
+.weather-details-active {
+    display: block;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
